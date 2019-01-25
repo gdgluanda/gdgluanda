@@ -22,7 +22,9 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-image: rgb(245, 220, 220);
+  background-image:url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: repeat;
 }
 
 body {
