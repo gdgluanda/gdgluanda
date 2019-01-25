@@ -20,11 +20,17 @@ a:hover {
  */
 
 html,
-body {
+body.home {
   height: 100%;
   background-image:url(../img/bg.jpg);
   background-size: cover;
   background-repeat: repeat;
+}
+body.about {
+ height: 100%;
+  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%) ;
+  background-size: cover;
+  background-repeat: no-repeat center center!important;
 }
 
 body {
