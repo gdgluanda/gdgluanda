@@ -1,3 +1,12 @@
+
+/*GDG Luanda custom script 
+*** ***** ***** ******* ******* ****
+*** *** *** * ** *** ****** ****
+* ********* ****
+*  ***   **
+
+*/
+
 'use strict';
  // Open offsite navigation.
  $('#nav-expander').on('click', function(e) {
@@ -74,13 +83,38 @@ $(window).load(function () {
     smoothScroll.init();
 });
 
+//Please animate TypedText 
+document.addEventListener("DOMContentLoaded", function () {
+	Typed.new(".type", {
+		strings: ["Meetings.","Activities.","Events."],
+		stringsElement: null,
+		// typing speed
+		typeSpeed: 60,
+		// time before typing starts
+		startDelay: 600,
+		// backspacing speed
+		backSpeed: 20,
+		// time before backspacing
+		backDelay: 500,
+		// loop
+		loop: true,
+		// false = infinite
+		loopCount: false,
+		// show cursor
+		showCursor: false,
+		// character for cursor
+		cursorChar: "|",
+		// attribute to type (null == text)
+		attr: null,
+		// either html or text
+		contentType: "html"
+	});
+});
 
 //What happen on window resize
 $(window).resize(function () {
     homeFullScreen();
 });
-
-
 
 //Set langitude and latidute for your location
 var lat = -8.827042;
